@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: Quicksand;
+    color: #212121;
 }
 
 p {
@@ -42,6 +43,13 @@ h6 {
 
 h4.service-heading {
     color: #5A5789;
+}
+
+h3.section-heading {
+    color: #542F61;
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 60px
 }
 
 .page-section h3.section-subheading {
@@ -804,4 +812,43 @@ ul.social-buttons li a:hover {
     }
 }
 
-.class {}
+
+/*LIST*/
+
+.dot p {
+    font-size: 16px;
+    font-weight: 100
+}
+
+ul.dot li {
+    list-style: none;
+    position: relative;
+}
+
+ul.dot li::before {
+    color: #FF9800;
+    content: "\2022";
+    display: inline-block;
+    font-size: 2.5em;
+    left: -27px;
+    position: absolute;
+    top: -17px;
+}
+
+.container {
+    position: relative;
+}
+
+.imgBox {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.imgBox img {
+    width: 100%;
+    margin: 0;
+}
