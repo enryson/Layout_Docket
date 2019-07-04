@@ -5,3 +5,51 @@
     function a() { 100 < e("#mainNav").offset().top ? e("#mainNav").addClass("navbar-shrink") : e("#mainNav").removeClass("navbar-shrink") }
     a(), e(window).scroll(a)
 }(jQuery);
+
+
+$(".regular").slick({
+
+    nextArrow: '<img class="slick-next" src="/Img/Icons/arrow-next.svg" >',
+    prevArrow: '<img class="slick-prev"  src="/Img/Icons/arrow-prev.svg" >',
+    useTransform: true,
+    infinite: true,
+    slidesPerRow: 2,
+    slidesToScroll: 2,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    lazyLoad: 'progressive',
+
+    responsive: [{
+            breakpoint: 1024,
+            settings: {
+
+                mobileFirst: true,
+                centerMode: true,
+                variableWidth: true,
+                slidesPerRow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+
+                centerMode: true,
+                variableWidth: true,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+
+                centerMode: true,
+                slidesPerRow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});

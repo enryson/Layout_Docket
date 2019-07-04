@@ -45,6 +45,13 @@ h4.service-heading {
     color: #5A5789;
 }
 
+h5.section-heading {
+    color: #212121;
+    top: -90px;
+    font-size: 14px;
+    margin-bottom: 60px
+}
+
 h3.section-heading {
     color: #542F61;
     font-size: 34px;
@@ -55,15 +62,20 @@ h3.section-heading {
 .page-section h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
     font-family: Quicksand;
 }
 
+@media (max-width:767px) {
+    section {
+        padding: 85px 0
+    }
+}
+
 @media (min-width:768px) {
     section {
-        padding: 150px 0
+        padding: 85px 0
     }
 }
 
@@ -105,6 +117,15 @@ img::-moz-selection {
     box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.16);
     height: 50px;
     width: 232px;
+}
+
+.btn-Link {
+    color: #F6A02B !important;
+    background-color: transparent;
+}
+
+.btn-Link:hover {
+    color: #212121 !important;
 }
 
 .btn-primary {
@@ -851,4 +872,129 @@ ul.dot li::before {
 .imgBox img {
     width: 100%;
     margin: 0;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("/Img/Icons/arrow-prev.svg");
+}
+
+.carousel-control-next-icon {
+    background-image: url("/Img/Icons/arrow-next.svg");
+}
+
+#carroucel {
+    background-color: #E2D5FC;
+}
+
+h2.section-container {
+    font-size: 36px !important;
+    font-weight: 200;
+    color: #212121 !important;
+    margin-top: 0;
+    margin-bottom: 10px !important
+}
+
+p.section-container {
+    font-size: 16px !important;
+    font-weight: 100;
+    margin-top: 0 !important;
+    margin-bottom: 65px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width:800px) {
+    .section {
+        padding: 40px !important;
+    }
+}
+
+.card {
+    padding: 5px;
+    width: 500px;
+    height: 300px;
+    margin: 30px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 21px !important;
+    margin-top: 50px !important;
+    margin-bottom: 5px;
+    max-width: 450px;
+}
+
+.card-text {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 100 !important;
+    margin-top: 1px;
+}
+
+.card-link {
+    font-weight: 800;
+    margin-left: -50px!important;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+    animation-name: card;
+    animation-duration: 0.4s;
+}
+
+@keyframes card {
+    from {
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+    }
+    to {
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.slider {
+    width: 70%;
+    margin: -90px auto;
+}
+
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+}
+
+.slick-active.card {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slick-next,
+.slick-prev {
+    top: 350px;
+    margin: -70px;
+    width: 90px !important;
+    height: 90px !important;
 }
